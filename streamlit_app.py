@@ -39,4 +39,4 @@ if ingredients_list:
         st.success(f'Hey {name_on_order}, your Smoothie is ordered!', icon="✅")
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response)
+st.text(fruityvice_response.json())
